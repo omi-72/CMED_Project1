@@ -17,9 +17,7 @@ class MainViewModel(private val context: Context) : ViewModel() {
     val downloadProgress: LiveData<Int>
         get() = _downloadProgress
 
-    // Other ViewModel code
 
-    // Update progress method
     private fun updateProgress(progress: Int) {
         _downloadProgress.postValue(progress)
     }
